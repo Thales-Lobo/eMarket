@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" 
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+    <h:head>
+        <title>Création d'un produit</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </h:head>
+    <h:body>
+        <f:view>
+            <h:form>
+                <h:commandLink action="toHome">
+                    <h:outputText value="Accueil"/>
+                </h:commandLink>
+            </h:form>
+            <h:form id="product-create" >
+                <h:outputLabel for="reference" value="Référence du produit : " />
+                <h:inputText id="reference" value="#{catalogManager.newProduct.id}" />
+                <br/>
+
+                <h:outputLabel for="name" value="Nom du produit : " />
+                <h:inputText id="name" value="#{catalogManager.newProduct.name}" />
+                <br/>
+
+                <h:outputLabel for="price" value="Prix du produit : " />
+                <h:inputText id="price" value="#{catalogManager.newProduct.price}" />
+                <br/>
+
+                <h:commandButton value="Valider" action="#{catalogManager.createProduct}" />
+                <br/>
+            </h:form>
+        </f:view>    
+    </h:body>
+</html>

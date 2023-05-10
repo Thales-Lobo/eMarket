@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+    <h:head>
+        <link href="monstyle.css" rel="stylesheet" type="text/css" />
+        <title>eMarket - Accueil</title>
+    </h:head>
+    <h:body>
+        <f:view>
+            <h1>eMarket - Vente en ligne</h1>
+                    <h:form>
+                        <h:commandLink action="toShoppingCart">
+                            <h:outputText value="Votre panier"/> 
+                        </h:commandLink>
+                        <br/>
+
+                        <h:commandLink action="toCatalog">
+                            <h:outputText value="Catalogue"/>
+                        </h:commandLink>
+                        <br/>
+                        
+                        <h:commandLink action="toProductCreate">
+                            <h:outputText value="Ajouter produit au catalogue"/>
+                        </h:commandLink>
+                        <br/>
+                    </h:form>
+            <hr/>
+            <h:outputText value="Bienvenue sur le marketplace eMarket."/>
+            <br/>
+            <h:outputLink value="https://centralesupelec.fr">Partenaire</h:outputLink>
+        </f:view>
+    </h:body>
+</html>
+

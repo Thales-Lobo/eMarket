@@ -1,0 +1,17 @@
+body {
+    color: slategrey;
+    background-color: white;
+}
+
+.h1-title {
+    text-align: center;
+    color: black;
+}
+
+p {
+    text-align: justify;
+}
+
+.product {
+    color: orange;
+}
